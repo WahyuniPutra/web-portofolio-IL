@@ -1,0 +1,305 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Pusatkan link secara horizontal */
+    gap: 20px; /* Beri jarak antar link */
+    margin-top: 20px; /* Spasi di atas section */
+}
+
+.social-links a {
+    font-size: 18px; /* Ukuran teks */
+    font-weight: bold; /* Teks tebal */
+    color: #333; /* Warna teks default (gelap agar kontras dengan putih) */
+    text-decoration: none; /* Hilangkan garis bawah */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transisi halus */
+    border-bottom: 2px solid transparent; /* Garis bawah transisi */
+}
+
+.social-links a:hover {
+    color: #0099cc; /* Warna saat hover */
+    border-bottom: 2px solid #0099cc; /* Garis bawah saat hover */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px; /* Maksimal lebar body */
+    margin: 0 auto; /* Center body */
+    padding: 20px; /* Padding di sekitar body */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #00698f;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #00698f;
+}
+
+a:hover {
+    color: #0099cc;
+}
+
+/* Profile Header Styles */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav a.active {
+    color: #00698f;
+    border-bottom: 2px solid #00698f;
+}
+
+/* Intro Section Styles */
+.intro {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Justified Text Styles */
+.justified {
+    text-align: justify; /* Mengatur teks menjadi justify */
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Slider Styles */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    background-color: #00698f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    display: block;
+    background-color: #00698f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project a:hover {
+    background-color: #0099cc;
+}
+
+/* Contact Form Styles */
+.contact-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #00698f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0099cc;
+}
+
+.tour-btn {
+    margin-left: auto; /* Tarik tombol ke sisi kanan */
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tour-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #0099cc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+} */
+
+/* Responsif */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+
+    .contact-section {
+        padding: 15px;
+    }
+}
